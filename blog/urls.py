@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index),
-    path("post/<int:id>", views.get_post),
-    path("greet/<name>", views.greet),
+    path("alljokes/", views.all_jokes),
+    path("random/", views.random_joke),
+    path("joke_for/<sex>", views.joke_for),
 ]
